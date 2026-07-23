@@ -1,1 +1,185 @@
+/**********************************************************************************************************************/
+/*this block of code represents any and all pieces of code that would be duplicated in multiple places*/
+:root{
+    --grid-height-CCJK:45vh;
+    --grid-height-H-A:90vh;
+    --margin:40px auto;
+    --display-setting: grid;
+    --padding:10px;
+    --background-size-image: cover;
+    --text-align: center;
+    --font-family1: cursive;
+    --font-family-2: Arial;
+    --font-size:32px;
+}
+/**********************************************************************************************************************/
+/*this block of code represents non-repetitive text*/
+body{
+    height:500vh;
+}
+p{
+    font-weight: bold;
+    color: red;
+    font-size: 35px;
+}
+h1, .intro{
+    text-align: center;
+}
+.tabs{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+}
+.header{
+    background-image: url("../media/images.jpeg");
+}
+/***********************************************************************************************************************/
+/*this section sets the height, margin and display for the clothes, jewelry, kitchen and crafts section*/
+.clothes, .jewelry, .kitchen, .crafts {
+    height: var(--grid-height-CCJK);
+    margin: var(--margin);
+    display: var(--display-setting);
+}
 
+/*this section sets the height, margin and display for the household accessories*/
+.household-accessories {
+    height: var(--grid-height-H-A);
+    margin: var(--margin);
+    display: var(--display-setting);
+}
+
+/*this section sets the grid measurements for the clothes, jewelry, kitchen (3 columns x 1 row)*/
+.clothes, .jewelry, .kitchen {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+}
+/*this section sets the grid measurements for crafts (4 columns x 1 row)*/
+.crafts {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+/*this section sets the grid measurements for household accessories(3 columns x 2 rows)*/
+.household-accessories {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+}
+/**********************************************************************************************************************/
+/*this block of code focuses on the background images for each sub-division of the webpage*/
+.women{
+    background-image: url("../media/dress.jpg");
+}
+.womenjewelry{
+    background-image: url("../media/women jewelry.jpg");
+}
+.men{
+    background-image: url("../media/sweaters.jpg");
+}
+.menjewelry{
+    background-image: url("../media/male jewelry.jpg");
+}
+.livingroom-accessories{
+    background-image: url("../media/livingroom.jpg");
+}
+.bathroom-accessories{
+    background-image: url("../media/bathroom.jpg");
+}
+.bedroom-accessories{
+    background-image: url("../media/bedroom.jpg");
+}
+.kitchen-accessories{
+    background-image: url("../media/kitchen.jpg");
+}
+.utensils{
+     background-image: url("../media/utensil.jpg");
+}
+.appliances{
+    background-image: url("../media/appliance.jpg");
+}
+.containers{
+     background-image: url("../media/containers.jpg");
+}
+.sewing{
+    background-image: url("../media/sewing.jpg");
+}
+.handmade{
+        background-image: url("../media/handmade.jpg");
+}
+/**********************************************************************************************************************/
+/*this part focuses only on the clothing and jewelry department for women*/
+.women, .womenjewelry{
+    background-size: cover;
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+}
+/*this part focuses only the clothing and jewelry department for men*/
+.men, .menjewelry{
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+/**********************************************************************************************************************/
+/*this section focuses only on the kitchen appliances*/
+.appliances, .utensils{
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+/***********************************************************************************************************************/
+/*this section focuses only on the household accessories section*/
+.livingroom-accessories, .bathroom-accessories, .bedroom-accessories, .kitchen-accessories{
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    height: 45vh;
+}
+/***********************************************************************************************************************/
+/*this section focuses only on the crafts section*/
+.containers, .sewing, .handmade{
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    height: 45vh;
+}
+/**********************************************************************************************************************/
+/*this section focuses on the greetings and other text based content for each sub-division of the store*/
+.greeting1,.greeting2,.greeting3,.greeting4,.greeting5,.follow{
+    text-align: center;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**********************************************************************************************************************/
+/*this section focuses on the individual sub-categories that can a user can access directly from the home page*/
+.women-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    width: 90.5vw;
+    height:250vh;
+    border:3px solid gold;
+    margin: 50px;
+}
+
+.picture{
+    background-image: url("../media/dress-test.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 45vh;
+}
+
+.description{
+
+}
